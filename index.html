@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Rock, Paper, Scissors, Lizard, Spock</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="score-board">
+      <div class="title">
+        <ul>
+          <li>ROCK</li>
+          <li>PAPER</li>
+          <li>SCISSORS</li>
+          <li>LIZARD</li>
+          <li>SPOCK</li>
+        </ul>
+      </div>
+      <div class="score">
+        <p class="caption">score</p>
+        <p class="s-value">0</p>
+      </div>
+    </div>
+
+    <div class="user-choices">
+      <div id="rock" class="choice" onclick="userChoice('r')">
+        <div class="container-1">
+          <div class="container-2">
+            <div class="container-3">
+              <div class="container-4">
+                <img src="./images/icon-rock.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space"></div>
+
+      <div id="paper" class="choice" onclick="userChoice('p')">
+        <div class="container-1">
+          <div class="container-2">
+            <div class="container-3">
+              <div class="container-4">
+                <img src="./images/icon-paper.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="scissors" class="choice" onclick="userChoice('s')">
+        <div class="container-1">
+          <div class="container-2">
+            <div class="container-3">
+              <div class="container-4">
+                <img src="./images/icon-scissors.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="lizard" class="choice" onclick="userChoice('l')">
+        <div class="container-1">
+          <div class="container-2">
+            <div class="container-3">
+              <div class="container-4">
+                <img src="./images/icon-lizard.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="spock" class="choice" onclick="userChoice('S')">
+        <div class="container-1">
+          <div class="container-2">
+            <div class="container-3">
+              <div class="container-4">
+                <img src="./images/icon-spock.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="show-decision">
+      <div class="user-choice">
+        <p>YOU PICKED</p>
+        <div id="uH">
+          <div class="container-1">
+            <div class="container-2">
+              <div class="container-3">
+                <div class="container-4">
+                  <img id="imageSelected" src="./images/icon-rock.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="referee">
+        <div class="decision">
+          <p id="decision">IT'S A TIE</p>
+        </div>
+        <div class="play-again" onclick="playAgain()">PLAY AGAIN</div>
+      </div>
+
+      <div class="cpChoice">
+        <p>THE HOUSE PICKED</p>
+        <div id="cpH">
+          <div class="container-1">
+            <div class="container-2">
+              <div class="container-3">
+                <div class="container-4">
+                  <img id="_cpH-Image" src="./images/icon-rock.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-bg">
+      <div class="modal">
+        <span class="close" onclick="closeModal()"><img src="./images/icon-close.svg" alt=""></span>
+        <p class="title">Rules</p>
+        <div class="content">
+          <img src="./images/image-rules-bonus.svg" alt="">
+        </div>
+      </div>
+    </div>
+    
+    <div class="rules" onclick="showModal()">
+      <p>RULES</p>
+    </div>
+    
+    <script src="./index.js"></script>
+
+      <!-- <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Opoku Frimpong Ernest</a>.
+      </div> -->
+  </div>
+</body>
+
+</html>
