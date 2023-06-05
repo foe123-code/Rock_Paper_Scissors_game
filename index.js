@@ -1,3 +1,4 @@
+
 const imageList = {
     'r':'./images/icon-rock.svg',
     'p':'./images/icon-paper.svg',
