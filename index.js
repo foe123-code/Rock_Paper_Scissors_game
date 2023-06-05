@@ -52,7 +52,7 @@ let cpChoice = () => {
     return cpHand;
 }
 
-let score = 0;
+let scoreValue = 0;
 
 let referee = (cpHand, uHand) => {
 
@@ -69,8 +69,9 @@ let referee = (cpHand, uHand) => {
         case 'rs':
         case 'lp':
         case 'Sr':
+            scoreValue++;
             setDecision('YOU WIN!');
-            setScore()
+            updateScore()
             break;
         case 'ps':
         case 'rp':
@@ -100,10 +101,22 @@ let setDecision = (decision) => {
     document.querySelector('.decision').textContent = decision;
 }
 
-let setScore = () => {
-    score++;
-    document.querySelector('.s-value').textContent = score;
+let updateScore = () => {
+    const scoreElement = document.querySelector('.s-value');
+    scoreElement.textContent = scoreValue;
+    localStorage.setItem('score', scoreValue);
 }
+
+window.onload = function(){
+    const storedScore = localStorage.getItem('score');
+    if(storedScore){
+        scoreValue = parseInt(storedScore);
+    }
+    
+    updateScore();
+}
+
+
 
 
 
