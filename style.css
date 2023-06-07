@@ -60,7 +60,7 @@
 }
 
 .score-value {
-    color: hsl(229, 25%, 31%);
+    color: hsla(228, 25%, 31%, 0.712);
     font-size: 50px;
     font-weight: 600;
     margin-top: -5px;
@@ -74,7 +74,7 @@
     flex-flow: column wrap-reverse;
     justify-content: space-around;
     margin: 50px auto 50px auto;
-    background-image: url('/Rock_Paper_Scissors_game/images/bg-pentagon.svg');
+    background-image: url('./images/bg-pentagon.svg');
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -337,7 +337,7 @@
         flex-flow: column wrap-reverse;
         justify-content: space-around;
         margin: 50px auto 50px auto;
-        background-image: url('/Rock_Paper_Scissors_game/images/bg-pentagon.svg');
+        background-image: url('./images/bg-pentagon.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: 60vw;
