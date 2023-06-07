@@ -19,7 +19,7 @@ The game follows the following rules:
 ## Getting Started
 
 To play the game, follow these steps:
-1. Open your browser and visit 'https://rock-paper-scissors-c4ad3.web.app/'
+1. Open your browser and visit 'https://starlit-marigold-093b7c.netlify.app/'
    
 2. The game interface will be displayed, showing buttons for each move (Rock, Paper, Scissors, Lizard, and Spock).
 
