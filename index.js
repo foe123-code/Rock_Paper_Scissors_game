@@ -103,7 +103,7 @@ let setDecision = (decision) => {
 }
 
 let updateScore = () => {
-    const scoreElement = document.querySelector('.s-value');
+    const scoreElement = document.querySelector('.score-value');
     scoreElement.textContent = scoreValue;
     localStorage.setItem('score', scoreValue);
 }
